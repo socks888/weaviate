@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiyomi with love</title>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <style>
+        body {font-size: 18px;}
+        .container {margin: 10px;}
+        .main {width:120%}
+        .btn {font-size: 18px; padding: 5px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+            <div id="top">
+                <p>KIYOMILOVE <a href="/search">Search</a> <a href="/contact">Contact us</a></p>
+                <p>Matching talent and opportunity in the web3 and fintech space, in Japan</p>
+            </div>
+            <div>
+            <h1>Recruitment re-engineered with AI</h1>
+            </div>
+        <div id="textbox"> 
+            <ul>
+                <li style="list-style-type:none;"><h2>Instructions for use</h2></li>
+                <li>Preface with "write a resume" or a "job description"</li>
+                <li>Provide some data, example below</li>
+                <li>The model is trained to do resumes and JDs, if you try something else, you may get nonsense returned</li>
+                <li>You can paste an entire resume, for a summary</li>
+                <li>Length  is self-regulated. Too long and you may get an error</li>
+            </ul>
+        
+            <textarea rows="5" cols="50" id="search_box">
+                write a resume: ASP.NET, 10 years, iOS dev, team leadership
+
+            </textarea>
+            <input class="btn" id="showme" type="button" value="Make my gig">
+
+            <p> Now <a href="/search">KEY WORD SEARCH</a> your input and that of others.</p>
+            <p> Semantic, vectorized, search coming very soon.</p>
+            <p> If you want to summarize search through your inventory of jobs and resumes, <a href="/contact">hit me up</a></p>
+        </div>
+        
+        <div id="reset" style="display:none;">
+
+            <button id="toggle">Reset</button>
+        </div>
+        <div id="results"></div>
+
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+</html>

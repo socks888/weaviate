@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimi5</title>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <style>
+        body {font-size: 18px;}
+        .container {margin: 10px;}
+        .main {width:120%}
+        .btn {font-size: 18px; padding: 5px;}
+    </style>
+    <style>
+        .nostyle {list-style:none; font-weight:bold; color: rgb(77, 9, 9)}
+        .center {text-align:center;}
+        .logo { height: 180px; width: 180px; }
+        .square {
+            height: 175px;
+            width: 175px;
+        }
+        .gray {color:rgb(19, 68, 47);}
+        ul.nav li {display:inline; border:bottom;}
+        .container {padding:5px;}
+        .no_show {display:none;}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div id="top">
+        <p>KIYOMILOVE <a href="/">Home</a> <a href="/contact">Contact us</a></p>
+        <p>Matching talent and opportunity in the web3 and fintech space, in Japan</p>
+    </div>
+    <div class="row">
+        <textarea name="query" id="query" placeholder="Enter Key Words">Python Javascript</textarea>
+        <button class="btn" id="searchme">Search</button>
+    </div>
+    <div  class="col" class="no_show" id="headline"></div>
+<div class="row">
+
+<div  class="col" id="result">
+    
+
+    
+    This is in beta. you can make semantic or key word searches. <br>
+    This, to repeat, is based upon what users of this site have entered so it could be random or abusive. The input has not been moderated.<br>
+    The purpose is to display the power of the tech. <br>
+    ALL INPUT IS ANONYMOUS. NO COOKIES. <br>
+    We DO monitor your IP address so that the features of this site are not abusively over-used. We allow a maximum of 50 uses.<br>
+    If you want the full product experience, then you have to pay. <a href="/contact">Contact sales</a> 
+</div>
+
+ 
+<script src="{{url_for('static', filename='scripts/search.js')}}"></script>
+</div> 
+</body>
+</html>
